@@ -1,63 +1,71 @@
 
+
 .contenido {
     padding: 1.5%;
-    background-color: cornsilk;
+    background-color: rgb(11, 31, 92 , 0.3);
+    transition: 0.9s;
+   
 }
 
 .item  {
     padding: 5%;
-    background-color:coral;
-    border-radius: 5%cornsilk;
+    background-color:rgb(79, 169, 170);
+    border-radius: 5%rgb(82, 75, 50);
 
 }
-header
-span{
-    border-color: black; /* color del borde */
-  border-style: solid; /* estilo de borde */
-  border-width: 2px; /* grosor de borde */
-  border-radius: 10px; /* redondeado */
-  background-color: moccasin; /* color de fondo */
-  padding: 35px 50px;
-  color: red;
-}
-  
 
-.mail {
+.foot {
     text-align: center;
-    color: indigo;
-    text-shadow: lightblue;
-    text-transform: capitalize;
-    text-size-adjust: 150%;
-    font-style: oblique;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: normal;
+    color: darkblue;
 }
+
 
 .mapas {
     padding: 1%;
     border: 1% darkblue;
 }
 
-.menu {
+body {
     text-align: center;
-    padding: 10%;
-    background-color: rgb(245, 190, 222);
-    display: flex;
-    content: space around;
-  }
+    padding: 5%;
+    background-color: rgb(193, 171, 221);
+    
 
-nav {
+    background-image: url(/home/liah/lenovo/Programación/primer/paraparallax.jpeg);
+}
+
+menu {
+    text-align: center;
+    color: rgb(233, 189, 238);
+    padding: 10%;
+    background-color: rgba(9, 26, 29, 0.5);
+    margin: 1% auto;
+    transition: .8s;
+    border: 1% solid rgba(3, 60, 71, 0.01);
+    display: block ;
+    
+   
+}
+
+
+p {
+    color: darkorange;
+}
+
+/* nav {
     background-color: coral;
     color: black;
     padding: 10px;
-}
+} */
 
 /* .parrallax {
     background: #fff fixed no-repeat 50% 50%;
     background-size: cover;
 }
 
-#conteiner{
-    background-image: url(/home/liah/lenovo/Programación/primer/paraparallax.jpeg);
+conteiner{
+   
 } */
 
 /* #menues {
@@ -80,49 +88,32 @@ nav {
     "footer"
     "mapas"
     "nav"
-    "contenido"    ;
+    "contenido"
+    "form"
+    "body" 
     
     }
 @media screen and (min-width: 761px) and (max-width: 1023px){
 
 }
 
-
-
-span {
-    padding: 10px;
-    opacity: 0.6;
-}
-  
-span a,
-  span a:link {
-    color: white;
-    text-decoration: none;
-}
-  
-span:hover {
-    border-color: cornsilk;
-    border-width: 2px;
-    border-style: dotted;
-    border-radius: 8px;
-    padding: 8px;
-    opacity: 1;
-}
-
 .seccion {
     text-align: center;
     padding: 50px 80px;
+    color: darkorchid;
 }
   
-.seccion-clara a,
-.seccion-clara a:link,
+
 .seccion-clara {
-    color: #000;
-    text-decoration: none;
+    color: rgb(179, 177, 177, 0.4);
+    text-decoration: white;
 }
   
 .seccion-clara {
-    background-color: #f4f4f4;
+    background-color:rgba(235, 201, 201, 0.9);
+    background-color: rgba(42, 90, 250, 0.6, 0.4)  ;
+    transition: 0.7s;
+    background-image: url(fondseccclara.png);
 }
 
 
@@ -130,43 +121,43 @@ span:hover {
    
     color: rgb(59, 121, 118);
     padding: 15%;
-    margin: 10%;
+    margin: 1%;
     background-color: rgba(43, 64, 134, 0.6) ;
-    transition: 0.7s;
+    transition: 0.5s;
+
 }
 
 #form:hover{
-    background-color: rgba(160, 139, 96, 0.85);
-    color: coral;
-    transition: .8s;
+    background-color: rgba(40, 93, 207, 0.85);
+    color: rgb(233, 197, 184);
+    transition: .5s;
 
 }  
 
 #form label{
-    text-decoration: dashed;
+    text-decoration: darksalmon;
 }
 
 #Coment {
-    height: 120px;
+    height: 100px;
 
 }
-
   
 #titform  {
     color: coral;
     background-color: rgba(211, 138, 138, 0.5);
-    padding: 1%;
+    padding: 1em;
     border-bottom: 0;
     border-TOP: 0;
-    margin: 2.5% 2% 1% ;
+    margin: 2.5em 2em 1em ;
    
 }
 
   
 #fecha{
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 #gen2{
@@ -175,5 +166,5 @@ span:hover {
 }
 
 .radio {
-    padding: 1%;
+    padding: 1em;
 }
