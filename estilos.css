@@ -36,7 +36,7 @@ body {
     text-align: center;
     padding: 5%;
     background-color: rgb(193, 171, 221);
-    background-image: url(/home/liah/lenovo/Programación/primer/paraparallax.jpeg);
+    background-image: url(img/paraparallax.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     
@@ -102,7 +102,7 @@ conteiner{
     background-color:rgba(0, 0, 0);
     
     transition: 0.7s;
-    background-image: url(lunarosa.jpeg);
+    background-image: url(img/lunarosa.jpeg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
