@@ -1,4 +1,4 @@
-   
+
 .contenido {
     padding: 1.5%;
     background-color: cornsilk;
@@ -92,19 +92,88 @@ nav {
 span {
     padding: 10px;
     opacity: 0.6;
-  }
+}
   
-  span a,
+span a,
   span a:link {
     color: white;
     text-decoration: none;
-  }
+}
   
-  span:hover {
+span:hover {
     border-color: cornsilk;
     border-width: 2px;
     border-style: dotted;
     border-radius: 8px;
     padding: 8px;
     opacity: 1;
-  }
+}
+
+.seccion {
+    text-align: center;
+    padding: 50px 80px;
+}
+  
+.seccion-clara a,
+.seccion-clara a:link,
+.seccion-clara {
+    color: #000;
+    text-decoration: none;
+}
+  
+.seccion-clara {
+    background-color: #f4f4f4;
+}
+
+
+#form {
+   
+    color: rgb(59, 121, 118);
+    padding: 15%;
+    margin: 10%;
+    background-color: rgba(43, 64, 134, 0.6) ;
+    transition: 0.7s;
+}
+
+#form:hover{
+    background-color: rgba(160, 139, 96, 0.85);
+    color: coral;
+    transition: .8s;
+
+}  
+
+#form label{
+    text-decoration: dashed;
+}
+
+#Coment {
+    height: 120px;
+
+}
+
+  
+#titform  {
+    color: coral;
+    background-color: rgba(211, 138, 138, 0.5);
+    padding: 1%;
+    border-bottom: 0;
+    border-TOP: 0;
+    margin: 2.5% 2% 1% ;
+   
+}
+
+  
+#fecha{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+}
+
+#gen2{
+    display: flex;
+    flex-direction: row;
+}
+
+.radio {
+    padding: 1%;
+}

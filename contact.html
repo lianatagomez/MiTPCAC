@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">    
     <title>GATO</title>
     <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script>
 </head>
 <body> <div id="contenedor-ppal">
         <header>
@@ -23,8 +26,106 @@
            <div class="menu" id="main">    
                 <h1> Grupo Astronómico Teórico-Observacional</h1>
             </div>
-       
-           <p>Correo electronico <a href="mailto:lianagomez2211@gmail.com">lianagomez2211@gmail.com</a></p>
+
+            <form class="form-horizontal" action="" id="form" >
+
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="LNombre" >Nombre:</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="Nombre" placeholder="Ejemplo: Marta"  >
+                       
+                    </div>
+                    
+                </div>
+        
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="LApe">Apellido:</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="Ape" placeholder="Ejemplo: González">
+                    </div>
+                </div>
+        
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="Lemail">Email:</label>
+                    <div class="col-sm-10">
+                        <input type="email" class="form-control" id="email" placeholder="Ejemplo: gatitaespacial@email.com">
+                    </div>
+                </div>
+        
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="Lpwd">Contraseña:</label>
+                    <div class="col-sm-10">
+                        <input type="password" class="form-control" id="pwd"
+                            placeholder="Introduzca una contraseña: Ejemplo:aguantelaciencia2021">
+                    </div>
+                </div>
+        
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="Lcpwd">Confirmar contraseña:</label>
+                    <div class="col-sm-10">
+                        <input type="password" class="form-control" id="cpwd" placeholder="Confirme su contraseña">
+                    </div>
+                </div>
+        
+                <div class="form-group" id="Gen">
+                    <label class="control-label col-sm-2" for="LGen">Género:</label>
+                    <div class="col-sm-offset-2 col-sm-10" id="gen2">
+        
+                        <div class="radio">
+                            <input type="radio" name="optradio" checked>Masculino
+                        </div>
+                        <div class="radio">
+                            <input type="radio" name="optradio">Femenino
+                        </div>
+                        <div class="radio">
+                            <input type="radio" name="optradio">Otros
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="Lfecha">Fecha de nacimiento:</label>
+                    <div class="col-sm-10" id="fecha">
+                        <select class="form-control" id="dia">
+        
+                        </select>
+                        <select class="form-control" id="mes">
+        
+                        </select>
+                        <select class="form-control" id="año"> </select>
+                    </div>
+                </div>
+        
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="LTel">Telefono:</label>
+                    <div class="col-sm-10">
+                        <input type="tel" class="form-control" id="Tel" placeholder="Ejemplo: (0297)4444444">
+                    </div>
+                </div>
+        
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="LComent">Comentarios:</label>
+                    <div class="col-sm-10">
+                        <textarea class="form-control" id="Coment"></textarea>
+                    </div>
+                </div>
+        
+                <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+                        <div class="checkbox">
+                            <label><input type="checkbox"> ¿Desea recibir notificaciones?</label>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+                        <button type="submit" class="btn btn-default" id="enviar">Enviar</button>
+                    </div>
+                </div>
+            </form>
+        
+            
            <div class="mapas" id="map">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d838071.4487594669!2d-58.699117199582616!3d-34.86334773477459!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a2d8fe04e44181%3A0x61744f916b43789d!2sInstituto%20Argentino%20de%20Radioastronom%C3%ADa!5e0!3m2!1ses-419!2sar!4v1630607210234!5m2!1ses-419!2sar" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d44023.13401487637!2d-57.9627147100227!3d-34.91458303887572!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x9ae80df938607a2e!2sFacultad%20de%20Ciencias%20Astron%C3%B3micas%20y%20Geof%C3%ADsicas!5e0!3m2!1ses-419!2sar!4v1630607279947!5m2!1ses-419!2sar"  style="border:0;" allowfullscreen="" loading="lazy"></iframe>
@@ -38,7 +139,7 @@
    </body>
    </html>
    
-   
+   <script src="logico.js"></script>
    </div>
 </body>
 </html>
