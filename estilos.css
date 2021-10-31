@@ -7,9 +7,10 @@
    
 }
 
+
 .item  {
     padding: 5%;
-    background-color:rgb(79, 169, 170);
+    background-color:rgb(79, 169, 170, 0.9);
     border-radius: 5%rgb(82, 75, 50);
 
 }
@@ -18,6 +19,11 @@
     text-align: center;
     font-style: normal;
     color: darkblue;
+    justify-content: space-around;
+}
+
+header {
+
 }
 
 
@@ -30,9 +36,10 @@ body {
     text-align: center;
     padding: 5%;
     background-color: rgb(193, 171, 221);
-    
-
     background-image: url(/home/liah/lenovo/Programación/primer/paraparallax.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
 }
 
 menu {
@@ -77,7 +84,89 @@ conteiner{
     bottom: 0pix;
 } */
 
-@media screen and (max-width: 760px){
+
+
+.seccion {
+    text-align: center;
+    padding: 50px 80px;
+    color: rgb(145, 255, 0);
+}
+  
+
+.seccion-clara {
+    color: rgb(179, 177, 177, 0.4);
+    text-decoration: white;
+}
+  
+.seccion-clara {
+    background-color:rgba(0, 0, 0);
+    
+    transition: 0.7s;
+    background-image: url(lunarosa.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+#form {
+   
+    color: rgba(115, 238, 232, 0.5);
+    padding: 1%;
+    margin: 10%;
+    background-color: rgba(43, 64, 134, 0.6) ;
+    transition: 0.5s;
+
+}
+
+#form:hover{
+    background-color: rgba(40, 93, 207, 0.85);
+    color: rgb(233, 197, 184);
+    transition: .5s;
+    font-size: large;
+
+}  
+
+#form label{
+    text-decoration: darksalmon;
+}
+
+#Coment {
+    height: 10%;
+
+}
+  
+#titform  {
+    color: coral;
+    background-color: rgba(211, 138, 138, 0.5);
+    padding: 1%;
+    border-bottom: 0;
+    border-TOP: 0;
+    margin: 2.5% 2% 1% ;
+   
+}
+
+  
+#fecha{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+}
+
+#gen2{
+    display: flex;
+    flex-direction: column;
+
+}   
+
+.radio {
+    padding: 1%;
+}
+
+
+
+
+@media screen and (max-device-width: 480px) and (max-device-width: 960px) {
     #contenedor-ppal {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
@@ -92,79 +181,207 @@ conteiner{
     "form"
     "body" 
     
+    
     }
 @media screen and (min-width: 761px) and (max-width: 1023px){
-
+    #contenedor-ppal {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "header"
+    "menu"
+    "main"
+    "item"
+        "footer"
+        "mapas"
+        "nav"
+        "contenido"
+        "form"
+        "body" 
 }
 
-.seccion {
-    text-align: center;
-    padding: 50px 80px;
-    color: darkorchid;
-}
-  
-
-.seccion-clara {
-    color: rgb(179, 177, 177, 0.4);
-    text-decoration: white;
-}
-  
-.seccion-clara {
-    background-color:rgba(235, 201, 201, 0.9);
-    background-color: rgba(42, 90, 250, 0.6, 0.4)  ;
-    transition: 0.7s;
-    background-image: url(fondseccclara.png);
-}
-
-
-#form {
-   
-    color: rgb(59, 121, 118);
-    padding: 15%;
-    margin: 1%;
-    background-color: rgba(43, 64, 134, 0.6) ;
-    transition: 0.5s;
-
-}
-
-#form:hover{
-    background-color: rgba(40, 93, 207, 0.85);
-    color: rgb(233, 197, 184);
-    transition: .5s;
-
-}  
-
-#form label{
-    text-decoration: darksalmon;
-}
-
-#Coment {
-    height: 100px;
-
-}
-  
-#titform  {
-    color: coral;
-    background-color: rgba(211, 138, 138, 0.5);
-    padding: 1em;
-    border-bottom: 0;
-    border-TOP: 0;
-    margin: 2.5em 2em 1em ;
-   
-}
-
-  
-#fecha{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-#gen2{
-    display: flex;
-    flex-direction: row;
-}
-
-.radio {
-    padding: 1em;
-}
+@media (min-device-width: 480px) and (max-device-width: 960px)  {
+    
+    *{
+        font-size: 20px;
+    }
+ 
+    
+ 
+     .grid_container1{
+         display: flex;
+         flex-direction: row;
+         justify-content: space-evenly;
+         
+     }
+     
+     .grid_container2{
+         display: flex;
+         flex-direction: row;
+         justify-content: space-evenly;
+     }
+ 
+     img {
+         max-width: 1fr ;
+         min-width: 200px;
+     }
+ 
+     ul {
+     display: none; 
+     
+     right: 70%;
+     }
+ 
+     #menu{
+         list-style-type: none;
+         margin-top: 0;
+         padding: 0;
+         overflow: hidden;
+         background-color: rgba(51, 51, 51, 1);
+         z-index: 9;
+         left: 0;
+         right: 0;
+         top: 0;
+         position: fixed;
+         color: white;
+         text-align: center;
+        }
+ 
+        #menu > i{
+         padding: 5px;
+         font-size: 3em;
+ 
+        }
+        #menu:hover ul{
+            display:flex;
+            flex-direction: column;
+            
+            
+         }
+         li{
+             border: 2px solid black;
+         }
+ 
+         .contenidocascada {
+             left: 30%;
+ 
+         }
+        /*  li a, .cascadabtn  {
+     
+             padding: 10px 10px;
+             font-size: 20px;
+         
+           } */
+           .text {
+            
+             font-size: 15px;
+            
+         }
+         label {
+           
+             padding: 1em;
+             margin: 1em;
+         
+         }
+         .Form > div{
+             display: flex;
+             flex-direction: column;
+            
+ 
+         }
+ 
+        
+        
+        
+ 
+ }
+ 
+ @media (max-device-width: 480px){
+ 
+ 
+     *{
+         font-size: 20px;
+     }
+ 
+ 
+     .grid_container1{
+         display: flex;
+         flex-direction: column;
+        
+         
+     }
+     
+     .grid_container2{
+         display: flex;
+         flex-direction: column;
+         
+     }
+ 
+   label {
+         padding: 1em;
+         margin: 1em;
+        
+ 
+     }
+ 
+     img {
+         max-width: 400px ;
+         min-width: 200px;
+     }
+ 
+     ul {
+     display: none; 
+     
+     right: 70%;
+     }
+ 
+     #menu{
+         list-style-type: none;
+         margin-top: 0;
+         padding: 0;
+         overflow: hidden;
+         background-color: rgba(51, 51, 51, 1);
+         z-index: 9;
+         left: 0;
+         right: 0;
+         top: 0;
+         position: fixed;
+         color: white;
+         text-align: center;
+        }
+ 
+        #menu > i{
+         padding: 5px;
+         font-size: 3em;
+ 
+        }
+        #menu:hover ul{
+            display:flex;
+            flex-direction: column;
+            
+            
+         }
+         li{
+             border: 2px solid black;
+         }
+ 
+         .contenidocascada {
+             left: 30%;
+ 
+         }
+        /*  li a, .cascadabtn  {
+     
+             padding: 10px 10px;
+             font-size: 20px;
+         
+           } */
+           .text {
+            
+             font-size: 15px;
+            
+         }
+         .contenido{
+             margin: 10% 0px;
+             border-radius: 0;
+         }
+ }
+ 
